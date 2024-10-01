@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert Adventure</title>
+    <!-- Linking external CSS files & url for icons styling -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top header section for website title and brief introduction -->
+    <div id="top-header">
+        <header class="hero">
+            <!-- Main heading of the page -->
+            <h1>Explore the world with Travel Experts</h1>
+            <!-- description below the heading -->
+            <p>Your Adventure Awaits, Discover new destinations and create unforgettable memories.</p>
+        </header>
+    </div>
+
+    <!-- Main content area of the page -->
+    <div class="main-content">
+        <!-- Section for displaying images and their descriptions -->
+        <section class="image-section">
+            <!-- Sub-heading for the image section -->
+            <h2>Explore Our Destinations</h2>
+            <!-- Table to display image descriptions and handle interactions -->
+            <table id="imageTable">
+                <thead> <!-- Table header defining for descriptions -->
+                    
+                    <th>Description</th>
+                   
+                </thead>
+                <tbody></tbody> <!-- Table body to be filled dynamically with JS -->
+            </table>
+            <!-- Div to display image previews -->
+            <div class="preview-container">
+               <div id="imagePreview"></div>
+               <!-- Button to open the new window -->
+               <button id="OpenWindowBtn">Open More Info</button>
+            </div>
+
+        </section>
+
+        <!-- Section containing the booking form -->
+        <section class="form-section">
+            <div class="form-container">
+                <!-- Form title -->
+                <h2>Book Your Vacation</h2>
+                <!-- Form for collecting user information -->
+                <form id="travelForm">
+                    <!-- Input for the user's name -->
+                    <div class="input-group">
+                        <!-- used class fas fa-user to creat icon for the form items -->
+                        <label for="name"><i class="fas fa-user"></i> Name:</label>
+                        <input type="text" id="name" name="name">
+                        <p id="nameInstruction" class="instruction">Please enter your full name.</p>
+                        
+                    </div>
+                    
+                    <!-- Input for the user's address -->
+                    <div class="input-group">
+                        <label for="address"><i class="fas fa-home"></i> Address:</label>
+                        <input type="text" id="address" name="address">
+                        <p id="addressInstruction" class="instruction">Please enter your address.</p>
+                    </div>
+                    
+                    <!-- Input for the user's city -->
+                    <div class="input-group">
+                        <label for="city"><i class="fas fa-city"></i> City:</label>
+                        <input type="text" id="city" name="city">
+                        <p id="cityInstruction" class="instruction">Please enter your city.</p>
+                    </div>
+                    
+                    <!-- Input for the user's province -->
+                    <div class="input-group">
+                        <label for="province"><i class="fas fa-map-marker-alt"></i> Province:</label>
+                        <input type="text" id="province" name="province">
+                        <p id="provinceInstruction" class="instruction">Please enter your province.</p>
+                    </div>
+                    
+                    <!-- Input group for the user's postal code -->
+                    <div class="input-group">
+                        <label for="postalCode"><i class="fas fa-mail-bulk"></i> Postal Code:</label>
+                        <input type="text" id="postalCode" name="postalCode">
+                        <p id="postalCodeInstruction" class="instruction">Please enter a valid postal code.</p>
+                    </div>
+                    
+                    <!-- Buttons for submitting or resetting the form -->
+                    <div class="form-buttons">
+                        <button type="submit" id="submitBtn">Submit</button>
+                        <button type="reset" id="resetBtn">Reset</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+    </div>
+    <div class="contac">
+        <p>
+            <a href="contact.html" class="contact-link">
+                <i class="fas fa-envelope"></i> Contact Us
+            </a>
+        </p>
+    </div>
+
+    <!-- Footer section of the website -->
+    <footer>
+        <p>Travel Expert &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

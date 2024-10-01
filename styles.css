@@ -1,0 +1,209 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif; /* Basic font styling */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f9; /* Light background color */
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333; /* Dark gray text color */
+    text-align: center; /* Center the text */
+}
+
+/* Header section */
+#top-header {
+    background-color: #28a745; /* Green background for the header */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Align the text to the left */
+    color: white; /* White text color for contrast */
+}
+
+/* Main heading inside the header */
+.hero h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Set font size to 2.5 times the parent element's font size */
+}
+
+/* Main content styling */
+.main-content {
+    display: grid; /* Use CSS Grid to arrange sections */
+    grid-template-columns: 2fr 1fr; /* Two-thirds for images, one-third for form */
+    gap: 20px; /* Space between the grid columns */
+    padding: 20px; /* Padding around the main content */
+}
+
+/* Image section styling */
+.image-section {
+    background-color: white; /* White background for the image section */
+    padding: 20px; /* Padding inside the image section */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for the image table */
+#imageTable {
+    width: 100%; /* Make the table take full width of its container */
+    border-collapse: collapse; /* Remove space between table cells */
+}
+
+/* Table headers and cells styling */
+#imageTable th, #imageTable td {
+    padding: 10px; /* Padding inside table cells */
+    border-bottom: 1px solid #ddd; /* Border at the bottom of each row */
+    cursor: pointer; /* Change cursor to pointer when hovering over cells */
+}
+
+/* Hover effect to change text color in the table */
+#imageTable td:hover {
+    color: #28a745; /* Change text color to green on hover */
+}
+
+/* Image preview styling */
+#imagePreview img {
+    margin-top: 10px; /* Space above the previewed image */
+    width: 100%; /* Make the image take full width */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+/* Form section styling */
+.form-section {
+    background-color: white; /* White background for the form section */
+    padding: 20px; /* Padding inside the form section */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for input groups in the form */
+.input-group {
+    margin-bottom: 15px; /* Space below each input group */
+}
+
+/* Label styling inside the form */
+.input-group label {
+    display: block; /* Make the label take full width */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Input field styling */
+.input-group input {
+    width: 100%; /* Make inputs take full width */
+    padding: 8px; /* Padding inside the input fields */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for the input fields */
+}
+
+/* Instructions below input fields */
+.instruction {
+    visibility: hidden; /* Initially hide instructions */
+    color: #888; /* Light gray text for instructions */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 5px; /* Space above the instructions */
+}
+
+/* Form buttons container */
+.form-buttons {
+    display: flex; /* Use flexbox to arrange buttons */
+    justify-content: space-between; /* Place buttons at opposite ends */
+}
+
+/* General button styling */
+button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Padding inside buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px; /* Rounded corners for buttons */
+}
+.preview-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add space above the button */
+}
+
+/* Image preview container */
+#imagePreview {
+    position: relative; /* Establish a positioning context for children */
+    margin-bottom: 10px; /* Add space between the image and the button */
+}
+
+
+#imagePreview img {
+    width: 100%; /* Make sure the image fits well */
+    height: auto; /* Keep the aspect ratio */
+    z-index: 1; /* Lower z-index than the button */
+    position: relative; /* Optional, helps to create stacking context */
+}
+
+
+
+#OpenWindowBtn {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to the imagePreview */
+    top: 10px; /* Adjust this value as needed */
+    left: 10px; /* Adjust this value as needed */
+    z-index: 10; /* Ensure it's above the image */
+    padding: 10px 20px; /* Button padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+#OpenWindowBtn:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+.contac {
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
+    margin-right: 20px; /* Optional: Add space from the right side of the page */
+}
+
+.contac a {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contac a:hover {
+    background-color: #218838; /* Darken the button on hover */
+}
+
+.contac i {
+    margin-right: 8px; /* Add space between the icon and the text */
+}
+
+.contact-link {
+    color: #28a745; /* Match the button color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.contact-link i {
+    margin-right: 5px;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center the footer text */
+    padding: 20px; /* Padding inside the footer */
+    margin-top: 20px; /* Space above the footer */
+}
