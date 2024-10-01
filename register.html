@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Travel Expert Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top header section for the registration form -->
+    <header id="top-header">
+        <h1>Register for an Adventure</h1>
+    </header>
+
+    <!-- Registration form section -->
+   
+        <div class="form-container">
+            <!-- Form title -->
+            <h2>Book Your Vacation</h2>
+            <!-- Form for collecting user information -->
+            <form id="travelForm">
+                <!-- Input for the user's name -->
+                <div class="input-group">
+                    <label for="name"><i class="fas fa-user"></i> Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <p id="nameInstruction" class="instruction">Please enter your full name.</p>
+                </div>
+                
+                <!-- Input for the user's address -->
+                <div class="input-group">
+                    <label for="address"><i class="fas fa-home"></i> Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <p id="addressInstruction" class="instruction">Please enter your address.</p>
+                </div>
+                
+                <!-- Input for the user's city -->
+                <div class="input-group">
+                    <label for="city"><i class="fas fa-city"></i> City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <p id="cityInstruction" class="instruction">Please enter your city.</p>
+                </div>
+                
+                <!-- Input for the user's province -->
+                <div class="input-group">
+                    <label for="province"><i class="fas fa-map-marker-alt"></i> Province:</label>
+                    <input type="text" id="province" name="province" required>
+                    <p id="provinceInstruction" class="instruction">Please enter your province.</p>
+                </div>
+                
+                <!-- Input group for the user's postal code -->
+                <div class="input-group">
+                    <label for="postalCode"><i class="fas fa-mail-bulk"></i> Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode" required>
+                    <p id="postalCodeInstruction" class="instruction">Please enter a valid postal code.</p>
+                </div>
+                
+                <!-- Buttons for submitting or resetting the form -->
+                <div class="form-buttons">
+                    <button type="submit" id="submitBtn">Submit</button>
+                    <button type="reset" id="resetBtn">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Home Page Link -->
+        <div class="Home-page">
+            <a href="index.html">
+                <i class="fas fa-home"></i> Home Page
+            </a>
+        </div>
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Travel Expert Adventure. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
